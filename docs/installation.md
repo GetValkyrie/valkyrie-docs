@@ -54,7 +54,8 @@ installed, go ahead and do that next.
 sudo ufw allow from 10.42.0.0/24
 sudo ufw allow to 10.42.0.0/24
 ```
-On Debian Wheezy, if you have issues installing NFS packages because of errors like:
+**Fix nfs install issues on Debian**
+On Debian wheezy/squeeze, if you encounter errors like the following while installing nfs packages:
 ```
 insserv: Service portmap has to be enabled to start service nfs-common
 insserv: exiting now!
