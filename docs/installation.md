@@ -55,13 +55,14 @@ sudo ufw allow from 10.42.0.0/24
 sudo ufw allow to 10.42.0.0/24
 ```
 **Fix nfs install issues on Debian**
+
 On Debian wheezy/squeeze, if you encounter errors like the following while installing nfs packages:
 ```
 insserv: Service portmap has to be enabled to start service nfs-common
 insserv: exiting now!
 update-rc.d: error: insserv rejected the script header
 ```
-This is caused by the fact that debian NFS packages are transitioning from using portmapper to using rpcbind, but the package maintainers have not effected the required changes in the init.d scripts. You can fix this by:
+This is caused by the fact that debian nfs packages are transitioning from using portmapper to using rpcbind, but the package maintainers have not effected the required changes in the init.d scripts. You can fix this by:
 ```
 cd /etc/init.d
 sudo sed -i 's%$portmapper%$rpcbind%g' nfs-common nfs-kernel-server umountnfs.sh
