@@ -16,9 +16,10 @@ DEPENDENCIES
 ------------
 
 Valkyrie is a Drush extension, and thus requires a recent version of Drush. We
-currently recommend using Drush 7.x. Earlier versions *may* work, but are not
-currently well-tested or supported. Note that Drush can be installed stand-
-alone, if you are unable or unwilling to upgrade your system install.
+currently recommend using the latest Drush 7.x. Earlier versions *may* work,
+but are not currently well-tested or supported. Note that Drush can be
+installed stand- alone, if you are unable or unwilling to upgrade your system
+install.
 
  * https://github.com/drush-ops/drush#installupdate---a-global-drush-for-all-projects
 
